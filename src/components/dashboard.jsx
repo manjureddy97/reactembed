@@ -76,7 +76,7 @@ class Dashboard extends React.Component {
 
     return (
       <div>
-        <div className="inputDiv">
+        {/* <div className="inputDiv">
           <input
             placeholder="Search for a symbol"
             ref={(input) => (this.search = input)}
@@ -86,7 +86,7 @@ class Dashboard extends React.Component {
           <button onClick={this.loadChartData} className="dataRequest">
             Load Onchain Data
           </button>
-        </div>
+        </div> */}
         <div className="charty">
           {query.length > 2 ? (
             <TradingViewEmbed
@@ -95,10 +95,10 @@ class Dashboard extends React.Component {
                 interval: "1D",
                 colorTheme: "dark",
                 width: "100%",
-                symbol: query + "USD",
+                // symbol: query + "USD",
                 studies: [
                   "MACD@tv-basicstudies",
-                  "StochasticRSI@tv-basicstudies",
+                  // "StochasticRSI@tv-basicstudies",
                   "TripleEMA@tv-basicstudies",
                 ],
               }}
